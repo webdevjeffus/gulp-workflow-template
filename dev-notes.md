@@ -10,3 +10,5 @@
 ## Set up Gulp build tools
 * Verify gulp global installation: gulp -v
 * Install gulp locally: npm install gulp --save-dev
+* Create gulpfile.js
+* In gulpfile.js, require gulp package
