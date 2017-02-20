@@ -1,17 +1,24 @@
+/* MEDIA QUERIES - Mobile First */
+
+/* Default would be "mqXSm", Extra Small, for phones */
+
+/* Tablets */
 @define-mixin mqSm {
-  @media only screen and (min-width: 680px) {
+  @media only screen and (min-width: $scrSm) {
     @mixin-content;
   }
 }
 
+/* Small computer screens - laptops */
 @define-mixin mqMd {
-  @media only screen and (min-width: 960px) {
+  @media only screen and (min-width: $scrMd) {
     @mixin-content;
   }
 }
 
+/* Large computer screens - desktops */
 @define-mixin mqLg {
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: $scrLg) {
     @mixin-content;
   }
 }

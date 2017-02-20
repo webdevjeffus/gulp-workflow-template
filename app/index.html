@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Single-Page Rainforest | webdevjeff.us</title>
-  <meta name="description" content="A responsive single-page website developed by Jeff George, using HTML, CSS, Javascript, along with Gulp, PostCSS, Webpack, Babel, and jQuery">
+  <title>Single-Page Template | webdevjeff.us</title>
+  <meta name="description" content="A responsive single-page template developed by Jeff George, using HTML, CSS, Javascript, along with Gulp, PostCSS, Webpack, Babel, and jQuery">
   <meta name="author" content="Jeff George">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,14 +20,39 @@
   <!-- endbuild -->
 </head>
 
-<body>
+<body class="container">
   <header>
-    <h1>Single-Page Rainforest</h1>
-    <p>Content to come.</p>
+    <h1>Single-Page Website</h1>
+    <p>A responsive template using gulp, postcss, and webpack</p>
   </header>
 
+  <main>
+    <!-- Template for responsive image using picture to optimize crop ratio -->
+    <section>
+      <picture>
+        <source srcset="http://placehold.it/1200x800/ff9944/000000?text=Large+image:+1200x800 1200w, http://placehold.it/2400x1600/ff9944/000000?text=Large+image+HD:+2400x1600" media="(min-width: 1200px)">
+        <source srcset="http://placehold.it/960x600/ff9944/000000?text=Medium+image:+960x600 960w, http://placehold.it/1920x1200/ff9944/000000?text=Medium+image+HD:+1920x1200 1920w" media="(min-width: 960px)">
+        <source srcset="http://placehold.it/680x400/ff9944/000000?text=Small+image:+680x400 680w, http://placehold.it/1360x800/ff9944/000000?text=Small+image+HD:+1360x800" media="(min-width: 680px)">
+        <img srcset="http://placehold.it/400x500/ff9944/000000?text=XSmall+image:+400x500 400w,
+        http://placehold.it/800x1000/ff9944/000000?text=XSmall+image+HD:+800x1000 800w">
+      </picture>
+    </section>
+
+    <!-- Template for responsive image using img to optimize resolution -->
+    <section>
+      <img srcset="http://placehold.it/400x200/99ff44/000000?text=XSmall+image:+400x200 400w,
+      http://placehold.it/680x340/99ff44/000000?text=Small+image:+680x340 680w,
+      http://placehold.it/960x480/99ff44/000000?text=Medium+image:+960x480 960w,
+      http://placehold.it/1200x600/99ff44/000000?text=Large+image:+1200x600 1200w">
+    </section>
 
 
+
+  </main>
+
+  <footer>
+    <p>Footer <a href="https://en.wikipedia.org/wiki/The_Banana_Splits">content</a></p>
+  </footer>
 
   <!-- build:js assets/js/App.js -->
   <script type="text/javascript" src="/temp/scripts/App.js"></script>

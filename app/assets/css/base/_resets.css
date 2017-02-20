@@ -16,7 +16,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid $colorText;
   margin: 1em 0;
   padding: 0;
 }
@@ -42,6 +42,8 @@ textarea { resize: vertical; }
 *, *:before, *:after { box-sizing: inherit; }
 html { box-sizing: border-box; }
 
+body { margin: 0 auto; }
+
 body,
 section,
 article,
@@ -51,10 +53,66 @@ main,
 footer,
 nav { padding: 0; }
 
-h1, h2, h3, h4, h5, h6, ol, ul {
+header:after,
+main:after,
+section:after,
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.4rem; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1.2rem; }
+h6 {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  padding: 0.6rem 0 0;
+}
+
+ol, ul {
+  -webkit-padding-start: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
 
-ol, ul { -webkit-padding-start: 0; }
+ul { list-style: none; }
+ol { padding-left: 1.5em;}
+  /* Use of em instead of rem for left padding is deliberate,
+     so indent will scale with font */
+
+li {
+  margin: 0;
+  padding: 0.6rem 0 0;
+}
+
+li:last-of-type { margin-bottom: 0.6rem; }
+
+p,
+label {
+  line-height: 1.4;
+  margin: 0;
+  padding: 0.6rem 0;
+}
+
+img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
 
