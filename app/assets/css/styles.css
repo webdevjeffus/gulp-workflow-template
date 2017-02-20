@@ -1,62 +1,12 @@
-/* RESETS ************************************************/
+/* BASE CSS: Resets, variables, mixins, and site-wide styles */
+@import "normalize.css";
+@import "base/_resets.css";
+@import "base/_global.css";
 
-/* Resets from HTML5 BOILERPLATE *************************/
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video { vertical-align: middle; }
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-textarea { resize: vertical; }
+/* MODULES: Styles for reusable components, eg: buttons, forms */
 
 
-/* Resets from DROP-IN.CSS *******************************/
+/* BLOCKS: Customized styles for pages or sections */
 
-*, *:before, *:after { box-sizing: inherit; }
-html { box-sizing: border-box; }
 
-body,
-section,
-article,
-aside,
-header,
-main,
-footer,
-nav { padding: 0; }
-
-h1, h2, h3, h4, h5, h6, ol, ul {
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-}
-
-ol, ul { -webkit-padding-start: 0; }
-
-$testColor: rgba(32,32,32,1);
-
+/* HELPERS: Styles adjust, tweak, or fine-tune elements */
