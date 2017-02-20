@@ -18,4 +18,5 @@
   * autoprefixer
   * postcss-simple-vars
   * postcss-nested
+  * postcss-import
 * Set up watch task to monitor and update html, css, and js files
