@@ -3,67 +3,26 @@ Site-wide rules specific to this project, such as font
 families and sizes, etc.
 \*********************************************************/
 
-body { margin: 0 auto; }
 
-h1 { font-size: 2.25rem; }
-h2 { font-size: 1.75rem; }
-h3 { font-size: 1.4rem; }
-h4 { font-size: 1.2rem; }
-h5 { font-size: 1.2rem; }
-h6 {
-  font-size: 1rem;
-  font-style: italic;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0.6rem 0 0;
-}
-
-p,
-label {
-  line-height: 1.4;
-  margin: 0;
-  padding: 0.6rem 0;
-}
-
-li {
-  margin: 0;
-  padding: 0.6rem 0 0;
-}
-
-li:last-of-type { margin-bottom: 0.6rem; }
-
-ul { list-style: none; }
-ol { padding-left: 1.5em;}
-  /* Use of em instead of rem for left padding is deliberate,
-     so indent will scale with font */
-
-img {
-  margin: 0;
-  padding: 0;
-}
-
-/* Clearfix - Clears floats at end of section */
-header:after,
-main:after,
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Link styles */
-a,
-header nav input[type="submit"] {
-  font-weight: bold;
-  text-decoration: none;
-}
+/* Default Colors */
 
 html { background-color: $colorBGAlt; }
-body { background-color: $colorBGMain;}
 
-img { width: 100%; }
+body {
+  background-color: $colorBGMain;
+  color: $colorText;
+
+  & a { color: $colorLinkMd; }
+  & a:visited { color: $colorLinkLo;}
+  & a:hover,
+  & a:active { color: $colorLinkHi; }
+}
+
+header, footer {
+  background-color: $colorBGOpp;
+  color: $colorTextOpp;
+}
+
 
 /* Responsive design styles */
 

@@ -5,6 +5,7 @@ Variables such as colors, font-families, etc.
 /* Colors */
 
 $colorText:   rgb( 48, 48, 48);
+$colorTextOpp:  rgb(232,232,232);
 $colorBGMain: rgb(248,248,248);
 $colorBGAlt:  rgb(204,204,204);
 $colorBGOpp:  rgb( 18, 18, 18);
