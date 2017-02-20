@@ -11,12 +11,12 @@ html { background-color: rgb($colorBGAlt); }
 body {
   background-color: rgb($colorBGMain);
   color: rgb($colorText);
-
-  & a { color: rgb($colorLinkMd); }
-  & a:visited { color: rgb($colorLinkLo);}
-  & a:hover,
-  & a:active { color: rgb($colorLinkHi); }
 }
+
+a { color: rgb($colorLinkMd); }
+a:visited { color: rgb($colorLinkLo);}
+a:hover,
+a:active { color: rgb($colorLinkHi); }
 
 
 /* Responsive design styles */
