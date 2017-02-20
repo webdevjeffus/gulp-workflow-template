@@ -15,10 +15,11 @@
 * Install gulp-watch locally: npm install gulp-watch --save-dev
 * Install postcss locally: npm install gulp-postcss --save-dev
 * Install postcss plugins: npm install <plug-in> --save-dev
-  * autoprefixer
+  * postcss-import
+  * postcss-mixins
   * postcss-simple-vars
   * postcss-nested
-  * postcss-import
+  * autoprefixer
 * Install browser-sync locally: npm install browser-sync --save-dev
 
 
