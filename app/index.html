@@ -21,7 +21,7 @@
 </head>
 
 <body class="container">
-  <header>
+  <header class="site-header">
     <h1>Single-Page Website</h1>
     <p>A responsive template using gulp, postcss, and webpack</p>
   </header>
@@ -46,11 +46,24 @@
       http://placehold.it/1200x600/99ff44/000000?text=Large+image:+1200x600 1200w">
     </section>
 
+    <!-- Template for 3 images displayed with flexbox -->
+    <section class="row--flex-wrap">
+      <div class="col--33Md">
+        <img srcset="http://placehold.it/400x300/9944ff/000000?text=3-col+image:+400x300 400w, http://placehold.it/680x511/9944ff/000000?text=3-col+image:+680x511 680w">
+      </div>
+      <div class="col--33Md">
+        <img srcset="http://placehold.it/400x300/4499ff/000000?text=3-col+image:+400x300 400w, http://placehold.it/680x511/4499ff/000000?text=3-col+image:+680x511 680w">
+      </div>
+      <div class="col--33Md">
+        <img srcset="http://placehold.it/400x300/9944ff/000000?text=3-col+image:+400x300 400w, http://placehold.it/680x511/9944ff/000000?text=3-col+image:+680x511 680w">
+      </div>
+    </section>
+
 
 
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>Footer <a href="https://en.wikipedia.org/wiki/The_Banana_Splits">content</a></p>
   </footer>
 

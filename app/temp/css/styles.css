@@ -493,10 +493,6 @@ body a:hover,
   body a:active {
   color: rgb( 32,204,124);
 }
-header, footer {
-  background-color: rgb( 18, 18, 18);
-  color: rgb(232,232,232);
-}
 /* Responsive design styles */
 html { font-size: 12px; }
 .container {
@@ -532,7 +528,51 @@ html { font-size: 12px; }
   }
 }
 /* MODULES: Styles for reusable components, eg: buttons, forms */
+.row--flex-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.col--33 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+}
+@media only screen and (min-width: 680px) {
+  .col--33Sm {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .col--33Md {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .col--33Lg {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+  }
+}
 /* BLOCKS: Customized styles for pages or sections */
+.site-header {
+  background-color: rgb( 18, 18, 18);
+  color: rgb(232,232,232);
+}
+.site-footer {
+  background-color: rgb( 18, 18, 18);
+  color: rgb(232,232,232);
+}
 /* HELPERS: Styles adjust, tweak, or fine-tune elements */
 /* HELPER ************************************************\
 Styles to adjust, tweak, nudge, and fine-tune elements.
