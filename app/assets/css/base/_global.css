@@ -61,6 +61,7 @@ header nav input[type="submit"] {
 }
 
 html { background-color: $colorBGAlt; }
+body { background-color: $colorBGMain;}
 
 /* Responsive design styles */
 
