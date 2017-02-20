@@ -1,5 +1,6 @@
 /* BASE CSS: Resets, variables, mixins, and site-wide styles */
 @import "normalize.css";
+@import "base/_variables";
 @import "base/_resets.css";
 @import "base/_global.css";
 
