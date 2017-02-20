@@ -10,6 +10,8 @@
 
 
 /* BLOCKS: Customized styles for pages or sections */
+@import "blocks/_site-header";
+@import "blocks/_site-footer";
 
 
 /* HELPERS: Styles adjust, tweak, or fine-tune elements */
