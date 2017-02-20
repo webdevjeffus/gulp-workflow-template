@@ -369,6 +369,15 @@ template {
 Variables such as colors, font-families, etc.
 \*********************************************************/
 /* Colors */
+/* Media Query values - Mobile First */
+/* Tablets */
+/* Laptops */
+/* Desktops */
+/* MEDIA QUERIES - Mobile First */
+/* Default would be "mqXSm", Extra Small, for phones */
+/* Tablets */
+/* Small computer screens - laptops */
+/* Large computer screens - desktops */
 /* RESETS ************************************************/
 /* Resets from HTML5 BOILERPLATE *************************/
 ::-moz-selection {
@@ -383,7 +392,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgb( 48, 48, 48);
   margin: 1em 0;
   padding: 0;
 }
@@ -402,6 +411,7 @@ textarea { resize: vertical; }
 /* Resets from DROP-IN.CSS *******************************/
 *, *:before, *:after { box-sizing: inherit; }
 html { box-sizing: border-box; }
+body { margin: 0 auto; }
 body,
 section,
 article,
@@ -410,16 +420,14 @@ header,
 main,
 footer,
 nav { padding: 0; }
-h1, h2, h3, h4, h5, h6, ol, ul {
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
+header:after,
+main:after,
+section:after,
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-ol, ul { -webkit-padding-start: 0; }
-/* GLOBAL ************************************************\
-Site-wide rules specific to this project, such as font
-families and sizes, etc.
-\*********************************************************/
-body { margin: 0 auto; }
 h1 { font-size: 2.25rem; }
 h2 { font-size: 1.75rem; }
 h3 { font-size: 1.4rem; }
@@ -431,42 +439,64 @@ h6 {
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
   padding: 0.6rem 0 0;
 }
+ol, ul {
+  -webkit-padding-start: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+ul { list-style: none; }
+ol { padding-left: 1.5em;}
+/* Use of em instead of rem for left padding is deliberate,
+     so indent will scale with font */
+li {
+  margin: 0;
+  padding: 0.6rem 0 0;
+}
+li:last-of-type { margin-bottom: 0.6rem; }
 p,
 label {
   line-height: 1.4;
   margin: 0;
   padding: 0.6rem 0;
 }
-li {
-  margin: 0;
-  padding: 0.6rem 0 0;
-}
-li:last-of-type { margin-bottom: 0.6rem; }
-ul { list-style: none; }
-ol { padding-left: 1.5em;}
-/* Use of em instead of rem for left padding is deliberate,
-     so indent will scale with font */
 img {
+  display: block;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
-/* Clearfix - Clears floats at end of section */
-header:after,
-main:after,
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* Link styles */
-a,
-header nav input[type="submit"] {
+a {
   font-weight: bold;
   text-decoration: none;
 }
+/* GLOBAL ************************************************\
+Site-wide rules specific to this project, such as font
+families and sizes, etc.
+\*********************************************************/
+/* Default Colors */
 html { background-color: rgb(204,204,204); }
+body {
+  background-color: rgb(248,248,248);
+  color: rgb( 48, 48, 48);
+}
+body a {
+  color: rgb( 18,115, 70);
+}
+body a:visited {
+  color: rgb( 10, 64, 39);
+}
+body a:hover,
+  body a:active {
+  color: rgb( 32,204,124);
+}
+header, footer {
+  background-color: rgb( 18, 18, 18);
+  color: rgb(232,232,232);
+}
 /* Responsive design styles */
 html { font-size: 12px; }
 .container {
