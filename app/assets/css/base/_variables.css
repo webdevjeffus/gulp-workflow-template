@@ -20,3 +20,10 @@ $colorAltLo:  rgb(127, 32, 35);
 $colorLinkHi: rgb( 32,204,124);
 $colorLinkMd: rgb( 18,115, 70);
 $colorLinkLo: rgb( 10, 64, 39);
+
+
+/* Media Query values - Mobile First */
+
+$scrSm: 680px;  /* Tablets */
+$scrMd: 960px;  /* Laptops */
+$scrLg: 1200px; /* Desktops */
