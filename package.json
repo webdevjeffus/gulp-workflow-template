@@ -1,0 +1,27 @@
+{
+  "name": "single-page-rainforest",
+  "version": "1.0.0",
+  "description": "A single-page website work sample",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "normalize.css": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdevjeffus/single-page-rainforest.git"
+  },
+  "author": "Jeff George",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webdevjeffus/single-page-rainforest/issues"
+  },
+  "homepage": "https://github.com/webdevjeffus/single-page-rainforest#readme"
+}
