@@ -16,7 +16,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid $colorText;
   margin: 1em 0;
   padding: 0;
 }
@@ -53,6 +53,15 @@ main,
 footer,
 nav { padding: 0; }
 
+header:after,
+main:after,
+section:after,
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 h1 { font-size: 2.25rem; }
 h2 { font-size: 1.75rem; }
 h3 { font-size: 1.4rem; }
@@ -76,12 +85,10 @@ ol, ul {
   -webkit-margin-after: 0;
 }
 
-p,
-label {
-  line-height: 1.4;
-  margin: 0;
-  padding: 0.6rem 0;
-}
+ul { list-style: none; }
+ol { padding-left: 1.5em;}
+  /* Use of em instead of rem for left padding is deliberate,
+     so indent will scale with font */
 
 li {
   margin: 0;
@@ -90,30 +97,22 @@ li {
 
 li:last-of-type { margin-bottom: 0.6rem; }
 
-ul { list-style: none; }
-ol { padding-left: 1.5em;}
-  /* Use of em instead of rem for left padding is deliberate,
-     so indent will scale with font */
+p,
+label {
+  line-height: 1.4;
+  margin: 0;
+  padding: 0.6rem 0;
+}
 
 img {
+  display: block;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-/* Clearfix - Clears floats at end of section */
-header:after,
-main:after,
-section:after,
-footer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Link styles */
-a,
-header nav input[type="submit"] {
+a {
   font-weight: bold;
   text-decoration: none;
 }
+
