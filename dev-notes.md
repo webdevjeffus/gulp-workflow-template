@@ -7,6 +7,6 @@
 * Install normalize.css: npm normalize.css --save
 * Note: to re-install node modules if deleted: npm install
 
-
+## Set up Gulp build tools
 * Verify gulp global installation: gulp -v
-* Install gulp locally:
+* Install gulp locally: npm install gulp --save-dev
