@@ -13,4 +13,9 @@
 * Create gulpfile.js
 * In gulpfile.js, require gulp package
 * Install gulp-watch locally: npm install gulp-watch --save-dev
+* Install postcss locally: npm install gulp-postcss --save-dev
+* Install postcss plugins: npm install <plug-in> --save-dev
+  * autoprefixer
+  * postcss-simple-vars
+  * postcss-nested
 * Set up watch task to monitor and update html, css, and js files
