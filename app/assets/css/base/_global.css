@@ -60,6 +60,8 @@ header nav input[type="submit"] {
   text-decoration: none;
 }
 
+html { background-color: $colorBGAlt; }
+
 /* Responsive design styles */
 
 html { font-size: 12px; }
