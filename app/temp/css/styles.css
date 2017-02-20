@@ -368,7 +368,7 @@ template {
 /* VARIABLES *********************************************\
 Variables such as colors, font-families, etc.
 \*********************************************************/
-/* Colors */
+/* Colors as rgb values */
 /* Media Query values - Mobile First */
 /* Tablets */
 /* Laptops */
@@ -392,7 +392,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid rgb( 48, 48, 48);
+  border-top: 1px solid 48, 48, 48;
   margin: 1em 0;
   padding: 0;
 }
@@ -481,17 +481,17 @@ families and sizes, etc.
 html { background-color: rgb(204,204,204); }
 body {
   background-color: rgb(248,248,248);
-  color: rgb( 48, 48, 48);
+  color: rgb(48, 48, 48);
 }
 body a {
-  color: rgb( 18,115, 70);
+  color: rgb(18,115, 70);
 }
 body a:visited {
-  color: rgb( 10, 64, 39);
+  color: rgb(10, 64, 39);
 }
 body a:hover,
   body a:active {
-  color: rgb( 32,204,124);
+  color: rgb(32,204,124);
 }
 /* Responsive design styles */
 html { font-size: 12px; }
@@ -566,11 +566,11 @@ html { font-size: 12px; }
 }
 /* BLOCKS: Customized styles for pages or sections */
 .site-header {
-  background-color: rgb( 18, 18, 18);
+  background-color: rgb(18, 18, 18);
   color: rgb(232,232,232);
 }
 .site-footer {
-  background-color: rgb( 18, 18, 18);
+  background-color: rgb(18, 18, 18);
   color: rgb(232,232,232);
 }
 /* HELPERS: Styles adjust, tweak, or fine-tune elements */

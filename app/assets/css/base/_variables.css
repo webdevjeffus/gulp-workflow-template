@@ -2,25 +2,25 @@
 Variables such as colors, font-families, etc.
 \*********************************************************/
 
-/* Colors */
+/* Colors as rgb values */
 
-$colorText:   rgb( 48, 48, 48);
-$colorTextOpp:  rgb(232,232,232);
-$colorBGMain: rgb(248,248,248);
-$colorBGAlt:  rgb(204,204,204);
-$colorBGOpp:  rgb( 18, 18, 18);
+$colorText:     48, 48, 48;
+$colorTextOpp:  232,232,232;
+$colorBGMain:   248,248,248;
+$colorBGAlt:    204,204,204;
+$colorBGOpp:     18, 18, 18;
 
-$colorThemeHi:  rgb( 81, 94,255);
-$colorThemeMd:  rgb( 52, 60,163);
-$colorThemeLo:  rgb( 41, 47,127);
+$colorThemeHi:   81, 94,255;
+$colorThemeMd:   52, 60,163;
+$colorThemeLo:   41, 47,127;
 
-$colorAltHi:  rgb(255, 63, 71);
-$colorAltMd:  rgb(173, 43, 48);
-$colorAltLo:  rgb(127, 32, 35);
+$colorAltHi:    255, 63, 71;
+$colorAltMd:    173, 43, 48;
+$colorAltLo:    127, 32, 35;
 
-$colorLinkHi: rgb( 32,204,124);
-$colorLinkMd: rgb( 18,115, 70);
-$colorLinkLo: rgb( 10, 64, 39);
+$colorLinkHi:   32,204,124;
+$colorLinkMd:   18,115, 70;
+$colorLinkLo:   10, 64, 39;
 
 
 /* Media Query values - Mobile First */

@@ -1,4 +1,4 @@
 .site-footer {
-  background-color: $colorBGOpp;
-  color: $colorTextOpp;
+  background-color: rgb($colorBGOpp);
+  color: rgb($colorTextOpp);
 }
