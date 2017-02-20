@@ -483,16 +483,10 @@ body {
   background-color: rgb(248,248,248);
   color: rgb(48, 48, 48);
 }
-body a {
-  color: rgb(18,115, 70);
-}
-body a:visited {
-  color: rgb(10, 64, 39);
-}
-body a:hover,
-  body a:active {
-  color: rgb(32,204,124);
-}
+a { color: rgb(18,115, 70); }
+a:visited { color: rgb(10, 64, 39);}
+a:hover,
+a:active { color: rgb(32,204,124); }
 /* Responsive design styles */
 html { font-size: 12px; }
 .container {

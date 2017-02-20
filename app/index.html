@@ -20,17 +20,19 @@
   <!-- endbuild -->
 </head>
 
-<body class="container">
+<body>
   <header class="site-header">
-    <h1>Single-Page Website</h1>
-    <p>A responsive template using gulp, postcss, and webpack</p>
+    <div class="container">
+      <h1>Single-Page Website</h1>
+      <p>A responsive template using gulp, postcss, and webpack</p>
+    </div>
   </header>
 
   <main>
     <!-- Template for responsive image using picture to optimize crop ratio -->
-    <section>
+    <section class="">
       <picture>
-        <source srcset="http://placehold.it/1200x800/ff9944/000000?text=Large+image:+1200x800 1200w, http://placehold.it/2400x1600/ff9944/000000?text=Large+image+HD:+2400x1600" media="(min-width: 1200px)">
+        <source srcset="http://placehold.it/1200x800/ff9944/000000?text=Large+image:+1200x800 1200w, http://placehold.it/2400x1600/ff9944/000000?text=Large+image+HD:+2400x1600 2400w" media="(min-width: 1200px)">
         <source srcset="http://placehold.it/960x600/ff9944/000000?text=Medium+image:+960x600 960w, http://placehold.it/1920x1200/ff9944/000000?text=Medium+image+HD:+1920x1200 1920w" media="(min-width: 960px)">
         <source srcset="http://placehold.it/680x400/ff9944/000000?text=Small+image:+680x400 680w, http://placehold.it/1360x800/ff9944/000000?text=Small+image+HD:+1360x800" media="(min-width: 680px)">
         <img srcset="http://placehold.it/400x500/ff9944/000000?text=XSmall+image:+400x500 400w,
@@ -39,7 +41,7 @@
     </section>
 
     <!-- Template for responsive image using img to optimize resolution -->
-    <section>
+    <section class="container">
       <img srcset="http://placehold.it/400x200/99ff44/000000?text=XSmall+image:+400x200 400w,
       http://placehold.it/680x340/99ff44/000000?text=Small+image:+680x340 680w,
       http://placehold.it/960x480/99ff44/000000?text=Medium+image:+960x480 960w,
@@ -47,7 +49,7 @@
     </section>
 
     <!-- Template for 3 images displayed with flexbox -->
-    <section class="row--flex-wrap">
+    <section class="container row--flex-wrap">
       <div class="col--33Md">
         <img srcset="http://placehold.it/400x300/9944ff/000000?text=3-col+image:+400x300 400w, http://placehold.it/680x511/9944ff/000000?text=3-col+image:+680x511 680w">
       </div>
