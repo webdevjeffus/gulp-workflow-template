@@ -11,7 +11,8 @@
     "normalize.css": "^5.0.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.11"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
