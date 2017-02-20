@@ -7,7 +7,7 @@
 * Install normalize.css: npm normalize.css --save
 * Note: to re-install node modules if deleted: npm install
 
-## Set up Gulp build tools
+## Install Gulp build tools
 * Verify gulp global installation: gulp -v
 * Install gulp locally: npm install gulp --save-dev
 * Create gulpfile.js
@@ -19,4 +19,8 @@
   * postcss-simple-vars
   * postcss-nested
   * postcss-import
+* Install browser-sync locally: npm install browser-sync --save-dev
+
+
+
 * Set up watch task to monitor and update html, css, and js files
