@@ -6,22 +6,17 @@ families and sizes, etc.
 
 /* Default Colors */
 
-html { background-color: $colorBGAlt; }
+html { background-color: rgb($colorBGAlt); }
 
 body {
-  background-color: $colorBGMain;
-  color: $colorText;
-
-  & a { color: $colorLinkMd; }
-  & a:visited { color: $colorLinkLo;}
-  & a:hover,
-  & a:active { color: $colorLinkHi; }
+  background-color: rgb($colorBGMain);
+  color: rgb($colorText);
 }
 
-header, footer {
-  background-color: $colorBGOpp;
-  color: $colorTextOpp;
-}
+a { color: rgb($colorLinkMd); }
+a:visited { color: rgb($colorLinkLo);}
+a:hover,
+a:active { color: rgb($colorLinkHi); }
 
 
 /* Responsive design styles */

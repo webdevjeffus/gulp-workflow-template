@@ -368,7 +368,7 @@ template {
 /* VARIABLES *********************************************\
 Variables such as colors, font-families, etc.
 \*********************************************************/
-/* Colors */
+/* Colors as rgb values */
 /* Media Query values - Mobile First */
 /* Tablets */
 /* Laptops */
@@ -392,7 +392,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid rgb( 48, 48, 48);
+  border-top: 1px solid 48, 48, 48;
   margin: 1em 0;
   padding: 0;
 }
@@ -481,22 +481,12 @@ families and sizes, etc.
 html { background-color: rgb(204,204,204); }
 body {
   background-color: rgb(248,248,248);
-  color: rgb( 48, 48, 48);
+  color: rgb(48, 48, 48);
 }
-body a {
-  color: rgb( 18,115, 70);
-}
-body a:visited {
-  color: rgb( 10, 64, 39);
-}
-body a:hover,
-  body a:active {
-  color: rgb( 32,204,124);
-}
-header, footer {
-  background-color: rgb( 18, 18, 18);
-  color: rgb(232,232,232);
-}
+a { color: rgb(18,115, 70); }
+a:visited { color: rgb(10, 64, 39);}
+a:hover,
+a:active { color: rgb(32,204,124); }
 /* Responsive design styles */
 html { font-size: 12px; }
 .container {
@@ -532,7 +522,51 @@ html { font-size: 12px; }
   }
 }
 /* MODULES: Styles for reusable components, eg: buttons, forms */
+.row--flex-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.col--33 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+}
+@media only screen and (min-width: 680px) {
+  .col--33Sm {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .col--33Md {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .col--33Lg {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+  }
+}
 /* BLOCKS: Customized styles for pages or sections */
+.site-header {
+  background-color: rgb(18, 18, 18);
+  color: rgb(232,232,232);
+}
+.site-footer {
+  background-color: rgb(18, 18, 18);
+  color: rgb(232,232,232);
+}
 /* HELPERS: Styles adjust, tweak, or fine-tune elements */
 /* HELPER ************************************************\
 Styles to adjust, tweak, nudge, and fine-tune elements.
