@@ -63,32 +63,15 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
-
-function Person(fullName, favColor) {
-  this.name = fullName;
-  this.color = favColor;
-  this.greet = function() {
-    console.log("My name is " + this.name + " and my color is " + this.color + ".");
-  }
-}
-
-module.exports = Person;
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Person = __webpack_require__(0);
+"use strict";
 
-var john = new Person("John Doe", "blue");
-
-john.greet();
 
 /***/ })
 /******/ ]);
