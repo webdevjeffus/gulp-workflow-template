@@ -5,7 +5,6 @@ var mixins =        require("postcss-mixins");
 var cssVars =       require("postcss-simple-vars");
 var nested =        require("postcss-nested");
 var autoprefixer =  require("autoprefixer");
-var browserSync =   require("browser-sync");
 
 
 gulp.task("buildCSS", function() {
@@ -19,7 +18,4 @@ gulp.task("buildCSS", function() {
 });
 
 
-gulp.task("updateCSS", ["buildCSS"], function() {
-  return gulp.src("./app/temp/css/styles.css")
-    .pipe(browserSync.stream());
-});
+
