@@ -19,4 +19,17 @@ gulp.task("watch", function() {
   watch("./app/assets/css/**/*.css", function() {
     gulp.start("updateCSS");
   });
+
+  watch("./app/assets/js/**/*.js", function () {
+    gulp.start("updateJS");
+  });
+});
+
+gulp.task("updateCSS", ["buildCSS"], function() {
+  return gulp.src("./app/temp/css/styles.css")
+    .pipe(browserSync.stream());
+});
+
+gulp.task("updateJS", ["buildJS"], function() {
+  browserSync.reload();
 });
