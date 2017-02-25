@@ -1,8 +1,8 @@
-/* NOTE: *************************************************\
-    Media queries for default container width are in
-    "Responsive design styles" section of _global.css
-\*********************************************************/
-
 .container {
-
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 400px;
+  @mixin mqSm { max-width: $scrSm; }
+  @mixin mqMd { max-width: $scrMd; }
+  @mixin mqLg { max-width: $scrLg; }
 }
