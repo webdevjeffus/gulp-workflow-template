@@ -1,4 +1,10 @@
 .site-footer {
   background-color: rgb($colorBGOpp);
   color: rgb($colorTextOpp);
+
+  &__content {
+    padding: 0.625rem 1.25rem;
+    text-align: center;
+  }
+
 }

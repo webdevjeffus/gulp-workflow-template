@@ -669,6 +669,11 @@ html { font-size: 12px; }
 .site-footer {
   background-color: rgb(18, 18, 18);
   color: rgb(232,232,232);
+
+}
+.site-footer__content {
+  padding: 0.625rem 1.25rem;
+  text-align: center;
 }
 /* HELPERS: Styles adjust, tweak, or fine-tune elements */
 /* HELPER ************************************************\
