@@ -20,12 +20,22 @@
   <!-- endbuild -->
 </head>
 
-<body>
+<body class="">
   <header class="site-header">
-    <div class="container">
-      <h1>Single-Page Website</h1>
-      <p>A responsive template using gulp, postcss, and webpack</p>
+    <div class="container site-header__content">
+      <div class="site-header__identity">
+        <h1 class="site-header__identity-logo">Single-Page Website</h1>
+        <p class="site-header__identity-slogan">A responsive template using gulp, postcss, and webpack</p>
+      </div>
+      <span id="site-header__nav-icon" class="site-header__nav-icon fa fa-bars fa-2x"></span>
     </div>
+      <nav id="site-header__nav" class="site-header__nav">
+        <ul id="site-header__nav-list" class="site-header__nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#anchor-1">Anchor 1</a></li>
+          <li><a href="#anchor-2">Anchor 2</a></li>
+        </ul>
+      </nav>
   </header>
 
   <main>
@@ -41,7 +51,7 @@
     </section>
 
     <!-- Template for responsive image using img to optimize resolution -->
-    <section class="container">
+    <section id="anchor-1" class="container">
       <img srcset="http://placehold.it/400x200/99ff44/000000?text=XSmall+image:+400x200 400w,
       http://placehold.it/680x340/99ff44/000000?text=Small+image:+680x340 680w,
       http://placehold.it/960x480/99ff44/000000?text=Medium+image:+960x480 960w,
@@ -49,7 +59,7 @@
     </section>
 
     <!-- Template for 3 images displayed with flexbox -->
-    <section class="container row--flex-wrap">
+    <section id="anchor-2" class="container row--flex-wrap">
       <div class="col--33Md">
         <img srcset="http://placehold.it/400x300/9944ff/000000?text=3-col+image:+400x300 400w, http://placehold.it/680x511/9944ff/000000?text=3-col+image:+680x511 680w">
       </div>

@@ -6,8 +6,8 @@
 @import "base/_global";
 
 /* MODULES: Styles for reusable components, eg: buttons, forms */
+@import "modules/_container";
 @import "modules/_row";
-
 
 /* BLOCKS: Customized styles for pages or sections */
 @import "blocks/_site-header";
