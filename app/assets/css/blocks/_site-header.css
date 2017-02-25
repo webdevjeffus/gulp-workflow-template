@@ -1,5 +1,105 @@
 .site-header {
-  background-color: rgb($colorBGOpp);
   color: rgb($colorTextOpp);
+  background-color: rgb($colorBGOpp);
+  position: fixed;
+  width: 100%;
+
+  &__content {
+    padding: 0.625rem 1.25rem;
+    position: relative;
+
+  }
+
+  &__identity {
+    padding: 0;
+    padding-bottom: 0.625rem;
+    margin: 0;
+    border: 1px solid skyblue;
+
+    @mixin mqMd {
+      float: left;
+    }
+
+    &-logo {
+      margin-bottom: 0.625rem;
+    }
+
+    &-slogan {
+      display: none;
+
+      @mixin mqSm {
+        display: initial;
+      }
+    }
+  }
+
+  &__nav {
+    position: relative;
+    border: 1px solid yellow;
+
+    @mixin mqMd {
+      margin: 0 auto;
+      max-width: $scrMd;
+      padding-right: 1.25rem;
+    }
+
+    @mixin mqLg {
+      max-width: $scrLg;
+    }
+
+    &-list {
+      border: 1px solid green;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      transform: translateY(-150%);
+      transition: transform 0.5s ease;
+
+      &--revealed {
+        transform: translateY(0);
+      }
+
+      @mixin mqMd {
+        transform: none;
+        float: right;
+        text-align: right;
+        position: static;
+        width: auto;
+      }
+
+      & li {
+        display: block;
+        width: 100%;
+        height: 4rem;
+        padding-top: 0.8rem;
+        background: rgb($colorBGOppAlt);
+        border-top: 3px solid rgb($colorBGOpp);
+        font-size: 2rem;
+
+        @mixin mqMd {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 0 0 0 1.5rem;
+        background: inherit;
+        border: none;
+        font-size: 1.25rem;
+        }
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      z-index: 10;
+      cursor: pointer;
+      text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+
+      @mixin mqMd {
+        display: none;
+      }
+    }
+  }
 }
 
