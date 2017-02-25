@@ -87,16 +87,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var MobileMenu = function () {
-  function MobileMenu() {
-    _classCallCheck(this, MobileMenu);
+var MobileNav = function () {
+  function MobileNav() {
+    _classCallCheck(this, MobileNav);
 
     this.navIcon = (0, _jquery2.default)("#site-header__nav-icon");
     this.navList = (0, _jquery2.default)("#site-header__nav-list");
     this.events();
   }
 
-  _createClass(MobileMenu, [{
+  _createClass(MobileNav, [{
     key: "events",
     value: function events() {
       this.navIcon.click(this.toggleNav.bind(this));
@@ -111,10 +111,10 @@ var MobileMenu = function () {
     }
   }]);
 
-  return MobileMenu;
+  return MobileNav;
 }();
 
-exports.default = MobileMenu;
+exports.default = MobileNav;
 
 /***/ }),
 /* 1 */
@@ -10350,13 +10350,13 @@ return jQuery;
 "use strict";
 
 
-var _MobileMenu = __webpack_require__(0);
+var _MobileNav = __webpack_require__(0);
 
-var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+var _MobileNav2 = _interopRequireDefault(_MobileNav);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var mobileMenu = new _MobileMenu2.default();
+var mobileNav = new _MobileNav2.default();
 
 /***/ })
 /******/ ]);

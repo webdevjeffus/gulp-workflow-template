@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-class MobileMenu {
+class MobileNav {
   constructor() {
     this.navIcon = $("#site-header__nav-icon");
     this.navList = $("#site-header__nav-list");
@@ -19,4 +19,4 @@ class MobileMenu {
   }
 }
 
-export default MobileMenu;
+export default MobileNav;

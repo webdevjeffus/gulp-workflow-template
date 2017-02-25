@@ -1,3 +1,3 @@
-import MobileMenu from './modules/MobileMenu';
+import MobileNav from './modules/MobileNav';
 
-var mobileMenu = new MobileMenu();
+var mobileNav = new MobileNav();
